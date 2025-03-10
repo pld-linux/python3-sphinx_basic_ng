@@ -5,7 +5,7 @@
 Summary:	A modern skeleton for Sphinx themes
 Name:		python3-%{module}
 Version:	1.0.0b2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.debian.net/%{module}/%{module}-%{version}.tar.gz
