@@ -1,8 +1,10 @@
+#
 # Conditional build:
 %bcond_without	doc	# API documentation
 
 %define		module	sphinx_basic_ng
 Summary:	A modern skeleton for Sphinx themes
+Summary(pl.UTF-8):	Nowoczesny szkielet motywów Sphinksa
 Name:		python3-%{module}
 Version:	1.0.0b2
 Release:	3
@@ -27,6 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A modernised skeleton for Sphinx themes.
+
+%description -l pl.UTF-8
+Zmodernizowany szkielet motywów Sphinksa.
 
 %package apidocs
 Summary:	API documentation for Python %{module} module
