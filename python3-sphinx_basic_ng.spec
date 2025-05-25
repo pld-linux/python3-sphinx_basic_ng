@@ -13,17 +13,19 @@ Group:		Libraries/Python
 Source0:	https://pypi.debian.net/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	fa57208da1afb5bf7e8926a761d10620
 URL:		https://pypi.org/project/sphinx-basic-ng/
-BuildRequires:	python3-modules >= 1:3.2
+BuildRequires:	python3-modules >= 1:3.7
 BuildRequires:	python3-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 2.044
 %if %{with doc}
 BuildRequires:	python3-furo
+BuildRequires:	python3-ipython
+BuildRequires:	python3-myst_parser
+BuildRequires:	python3-sphinx_copybutton
 BuildRequires:	python3-sphinx_inline_tabs
-BuildRequires:	sphinx-pdg-3
+BuildRequires:	sphinx-pdg-3 >= 4.0
 %endif
-# replace with other requires if defined in setup.py
-Requires:	python3-modules >= 1:3.2
+Requires:	python3-modules >= 1:3.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
